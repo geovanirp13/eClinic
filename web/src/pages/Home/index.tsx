@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
 import './styles.css';
 
-
 const Home = () => {
   return (
     <div id="page-home">

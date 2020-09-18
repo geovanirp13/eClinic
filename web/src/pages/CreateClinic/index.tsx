@@ -8,6 +8,7 @@ import {LeafletMouseEvent} from 'leaflet';
 import './styles.css';
 import logo from '../../assets/logo.svg';
 import Alert from '../Alert';
+import MaskedInput from '../../components/MaskedInput';
 
 interface Specialties {
   id: number;
@@ -179,7 +180,8 @@ const CreateClinic = () => {
           <div className="field-group">
             <div className="field">
               <label htmlFor="cnpj">CNPJ</label>
-              <input
+              <MaskedInput
+                mask="cnpj"
                 type="text"
                 name="cnpj"
                 id="cnpj"
@@ -196,20 +198,22 @@ const CreateClinic = () => {
               />
             </div>
           </div>
-
           <div className="field-group">
             <div className="field">
               <label htmlFor="whatsapp">Whatsapp</label>
-              <input
+              <MaskedInput
+                mask="whatsapp"
                 type="text"
                 name="whatsapp"
                 id="whatsapp"
                 onChange={handleInputChange}
               />
+
             </div>
             <div className="field">
               <label htmlFor="phone">Telefone</label>
-              <input
+              <MaskedInput
+                mask="whatsapp"
                 type="text"
                 name="phone"
                 id="phone"
